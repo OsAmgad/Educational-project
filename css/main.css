@@ -1,0 +1,69 @@
+section {
+  color: #333;
+  font-size: 28px;
+  font-family: sans-serif;
+}
+
+section .container {
+  background-color: #eee;
+  padding: 10px;
+}
+
+section .container .cont {
+  font-weight: bold;
+  margin-top: 20px;
+  padding: 25px;
+  border: 3px solid #f3b643;
+  border-radius: 10px;
+  position: relative;
+}
+
+section .container .cont::after {
+  right: -13px;
+}
+
+section .container .cont::before {
+  left: -13px;
+}
+
+section .container .cont .first div,
+section .container .cont .second div {
+  border: 2px solid #0ebabc;
+  border-radius: 10px;
+}
+
+section .container .cont .nums .f-row div {
+  border-bottom: 1px solid #555;
+}
+
+section .container .icons {
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+section .container .icons img {
+  cursor: pointer;
+}
+
+.disp-row, section .container .cont .first div,
+section .container .cont .second div, section .container .cont .nums .f-row div {
+  display: inline-block;
+  cursor: pointer;
+  margin: 10px;
+  padding: 10px;
+  font-size: 26px;
+}
+
+.cont-shadow, section .container .cont::after, section .container .cont::before {
+  content: " ";
+  position: absolute;
+  width: 10px;
+  height: 96%;
+  top: 2%;
+  background-color: #0ebabc;
+}
+/*# sourceMappingURL=main.css.map */
